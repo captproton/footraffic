@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+<% if logged_in? %>
+  <%= link_to("Home", "/") %> |
+  <%= link_to("Logout", logout_url) %>
+<% else %>
+  <%= link_to("Signup", signup_url) %><br/>
+  <%= link_to("Login", login_url) %>
+<% end %>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= yield %>
+
+</body>
+</html>

@@ -8,6 +8,40 @@
   <%= stylesheet_link_tag 'foottraffic' %>
 </head>
 <body>
+
+<div id="container">
+<div id="header">
+      <img height="150" width="948" src="/images/header.png" usemap="#hmap"/>
+   
+      <map id="hmap" name="hmap">
+       <area href="/" shape="rect" coords="18,0,345,129"/>
+       <area href="/" shape="circle" coords="18,68,18"/>
+      </map>
+   
+       <div id="navbar">
+           <div id="leftnav"></div>
+           <div id="middlenav">
+              <a href="signup-merchant.html">Are you a vendor?</a>|
+             
+              
+          </div>
+          <div id="rightnav"/>
+       </div>
+ 
+</div>
+  
+
+
+<div id="body">
+
+
+<div style="">
+
+<h1>Welcome!</h1>
+
+
+<p>Log in to get offers now!</p>
+
 <% if logged_in? %>
   <%= link_to("Home", "/") %> |
   <%= link_to("Logout", logout_url) %>

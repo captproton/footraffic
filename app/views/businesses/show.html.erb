@@ -3,6 +3,28 @@
   <%=h @business.name %>
 </p>
 
+<center>
+  <img src= "/images/clocktowercoffee.png" alt= "Clock Tower Coffee logo">
+    </center>
+
+<center>
+  <h2>Offer Effectiveness Metrics</h2>
+    </center>
+<br/>
+
+<table>
+  <tr>
+    <td>
+      
+      </td>
+    <td>
+      <%= image_tag(daily_local_traffic_chart)%>
+      </td>
+    <td>
+      <%= image_tag(offers_viewed_pie_chart)%>
+      </td>
+        </tr>
+          </table>
 
 <%= link_to 'Edit', edit_business_path(@business) %> |
 <%= link_to 'Back', businesses_path %>

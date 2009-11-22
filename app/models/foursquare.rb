@@ -1,11 +1,18 @@
-require 'oauth'
+require 'rexml/document'
+require 'net/http'
 class Foursquare
   @@attr_names = ["title", "description", "link", "geo_lat", "geo_long"]
   attr_accessor *@@attr_names
   
   def initialize
-    @@attr_names.each do |attr_name|
-      self.send "#{attr_name}=", "asdf"
+    xml = REXML::Document.new(open("http://api.foursquare.com/v1/history"))
+    self.articles = []
+    if doc 
+      @@attr_names.each do |attr_name|
+        if object.has_key?(attr_name.to_sym)
+          self.send "#{attr_name}=", object.fetch(attr_name.to_sym)
+        end
+      end
     end
   end
 end

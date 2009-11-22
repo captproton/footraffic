@@ -5,9 +5,37 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'foottraffic' %>
 </head>
 <body>
+<div id="container">
+<div id="header">
+      <%= image_tag("/images/header.png", :height => "150", :width => "948", :usemap => "#hmap") %>
+   
+      <map id="hmap" name="hmap">
+       <area href="/" shape="rect" coords="18,0,345,129"/>
+       <area href="/" shape="circle" coords="18,68,18"/>
+      </map>
+   
+       <div id="navbar">
+           <div id="leftnav"></div>
+           <div id="middlenav">
+              <a href="signup-merchant.html">Are you a vendor?</a>
+           </div>
+          <div id="rightnav"/>
+       </div>
+ 
+</div>
+
+<div id="body">
+
+
+<div style="">
+
+<h1>Welcome!</h1>
+
+
+<p>Log in to get offers now!</p>
 <% if logged_in? %>
   <%= link_to("Home", "/") %> |
   <%= link_to("Logout", logout_url) %>
@@ -19,6 +47,10 @@
 <p style="color: green"><%= flash[:notice] %></p>
 
 <%= yield %>
+
+</div>
+</div>
+</div>
 
 </body>
 </html>

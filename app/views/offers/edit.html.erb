@@ -1,0 +1,12 @@
+<h1>Editing offer</h1>
+
+<% form_for(@offer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @offer %> |
+<%= link_to 'Back', offers_path %>

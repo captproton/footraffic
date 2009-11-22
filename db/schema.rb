@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091121014716) do
+ActiveRecord::Schema.define(:version => 20091122020857) do
 
   create_table "businesses", :force => true do |t|
     t.string   "name"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(:version => 20091121014716) do
     t.datetime "activated_at"
     t.string   "state",                                    :default => "passive"
     t.datetime "deleted_at"
+    t.string   "foursquare_login"
+    t.string   "foursquare_password"
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true

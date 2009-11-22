@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091122023624) do
+ActiveRecord::Schema.define(:version => 20091122085309) do
 
   create_table "businesses", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,12 @@ ActiveRecord::Schema.define(:version => 20091122023624) do
   create_table "offers", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "business_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
   end
 
   create_table "users", :force => true do |t|

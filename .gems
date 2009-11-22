@@ -1,3 +1,3 @@
 aasm --version 2.1.3
 oauth --version 0.3.6
-mattetti-googlecharts --source gems.github.com
+googlecharts

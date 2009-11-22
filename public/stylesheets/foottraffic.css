@@ -1,0 +1,658 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #5a5858;
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+form {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0;
+}
+
+div#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 948px;
+}
+
+div#header {
+  font-size: 13px;
+  position: relative;
+  height: 150px;
+}
+
+/* LOGGED IN HEADER ELEMENTS */
+
+div#navbar {
+  position: absolute;
+  top: 11px;
+  right: 50px;
+}
+
+div#leftnav {
+  float: left;
+  width: 17px; height:40px;
+  background-image:url('/images/nav_left.png');
+}
+
+div#rightnav {
+  float: left;
+  width: 17px; height:40px;
+  background-image:url('/images/nav_right.png');
+}  
+
+div#middlenav {
+  float: left;
+  height: 40px;
+  line-height: 25pt;
+  background-image:url('/images/nav_middle.png');  
+}
+
+div#searchbox {
+  position: absolute;
+  top: 65px;
+  right: 50px;
+}
+
+input.searchbox {
+  float: left;
+  margin: 3px;
+  font-size: 11px;
+}
+
+/* LOGGED OUT HEADER ELEMENTS */
+
+div#tagline {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 285px;
+  left: 68px;
+}
+
+div#login_nav {
+  position: absolute;
+  top: 20px;
+  right: 28px;  
+}
+
+div#join_now {
+  position: absolute;
+  top: 265px;
+  right: 54px;
+}
+
+div#searchbox_out {
+  position: absolute;
+  top: 45px;
+  right: 24px;
+}
+
+input.searchbox_out {
+  color: #999999;
+  float: left;
+  margin: 3px;
+  font-size: 19px;
+}
+
+/* */
+
+div#body_header {
+  font-size: 13px;
+}
+
+select#switch_city, select#switch_city option {
+  font-size: 11px;
+}
+
+div#body_out {
+  position: relative;
+  top: 0; left: 24px;
+  padding: 0 0 10px 0;
+  width: 900px;
+  background-color: white;
+}
+
+div#body {
+  position: relative;
+  top: 0; left: 24px;
+  padding: 0 20px 10px 20px;
+  width: 860px;
+  background-color: white;
+  
+  -moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+div#footer {
+  padding: 10px 5px 10px 5px;
+  width: 890px;
+  position: relative;
+  left: 24px;  
+  color : #666666;
+  line-height: 12pt;
+  font-size: 13px;
+}
+
+a:link {
+  color : #2398c9;
+  text-decoration: none;
+  font-weight : bold;
+}
+
+a:visited {
+  color : #2398c9;
+  text-decoration: none;
+  font-weight : bold;
+}
+
+a:active {
+  color : #2398c9;
+  text-decoration: none;
+  font-weight : bold;
+}
+
+a:hover {
+  color : #2398c9;
+  text-decoration: underline;
+  font-weight : bold;
+}
+
+h1 {
+  font-size : 24px;
+  color : #0066cc;
+  font-weight : bold;
+  margin: 0;
+}
+
+h2 {
+  font-size : 24px;
+  color : #0066cc;
+  font-weight : normal;
+  margin: 0;
+}
+
+h3 {
+  font-size : 18px;
+  color : #888888;
+  font-weight : normal;
+  line-height: 20pt;
+  margin: 0;
+}
+
+div.hcenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.errorbox {
+  padding: 5px;
+  border: 2px solid red;
+}
+
+div.errormsg {
+  font-size: 14px;
+  color: red;
+  margin-top: 3px;
+}
+
+span.ajax_checkbox_msg {
+  display: none;
+  margin-left: 5px;
+}
+
+div.alerts_notice {
+  font-size : 20px;
+  color : #FFFFFF;
+  background-color: #ffcc33;
+  font-weight : bold;
+  padding: 5px 8px 5px 8px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+div.section {
+  margin: 0 0 20px 0;
+}
+
+div.section_content {
+  margin: 5px 0 5px 0;
+}
+
+div.section_title {
+  font-size : 24px;
+  color : #888888;
+  line-height: 20pt;
+  border-bottom: 1px solid #888888;
+}
+
+/********************************************************************************
+* Status Sections (Primarily for /stats)
+********************************************************************************/
+
+div.stats_section_title {
+  font-size : 12px;
+  color : #777777;  
+  font-weight : bold;
+  border-bottom: 1px solid #888888;
+  margin-bottom: 10px;
+}
+
+div.stats_section_content {
+	color : #AAAAAA;
+	font-weight : bold;
+}
+
+span.big_number {
+  font-size : 90px;
+}
+
+span.bigger_number {
+  font-size : 120px;
+}
+
+span.biggest_number {
+  font-size : 180px;
+}
+
+span.stats_mini_text {
+  font-size: 12px;
+	color: #BBBBBB;
+}
+
+span.stats_small_text {
+  font-size: 18px;
+	color: #BBBBBB;
+}
+
+div.stats_medium_text {
+  font-size : 22px;
+	line-height: 20pt;	
+	font-weight : 600;
+}
+
+div.stats_big_text {
+  font-size: 35px;
+  line-height: 25pt;
+  font-weight: 600;
+}
+
+div.ul {
+  margin: 0 0 3px 0;
+}
+
+span.blue {
+  color: #2398c9;
+}
+
+div.gray_content {
+  font-size : 24px;
+  color : #888888;
+  line-height: 24pt;
+}
+
+table.user_grid tr td {
+  padding: 0 5px 2px 0;
+  width: 30px;
+  max-width: 30px;
+  overflow: hidden;
+}
+
+table.badge_grid tr td {
+  padding: 0 5px 2px 0;
+}
+
+div.stat_bubble {
+  color : #FFFFFF;
+  background-color: #999999;
+  height: 75px;
+  float: left;
+  margin: 0 0 10px 10px;
+  padding: 8px;
+}
+
+div.stat_bubble_title {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+div.stat_bubble_content {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Safari only hack */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  div.stat_bubble_content {
+    position: relative;
+    top: -10px;
+  }
+}
+
+div.venue_special {
+  font-size: 14px;
+  color: white;
+  background-color: #4cb8df;
+  border: 1px #358aa9 solid;
+  padding: 10px;
+}
+
+div.tip_block {
+  padding: 8px 8px 8px 8px;
+}
+
+div.tip_pic {
+  float: left;
+  width: 30px;
+  height: ;
+  margin: 0 8px 0 0;
+  overflow: hidden;
+}
+
+div.tip_num {
+  float: left;
+  font-size : 30px;
+  color : #999999;
+  line-height: 20pt;
+  font-weight : bold;
+  margin: 0 8px 0 0;
+}
+
+div.tip_text {
+  display: table-cell;
+}
+
+div.tip_activity_buttons {
+  float: right;
+  text-align: right;
+  max-width: 100px;
+  margin: 0 0 0 8px;
+}
+
+div.tip_done_unchecked, div.tip_todo_unchecked, div.tip_checked {
+  text-align: left;
+  font-size: 11px;
+  width: 100px;
+  padding: 3px 0 3px 0;
+  margin: 0 0 5px 0;
+} 
+
+div.tip_done_unchecked {
+  color: white;
+  background-color: #b1c858;
+}
+
+div.tip_todo_unchecked {
+  color: white;
+  background-color: #237cc9;
+}
+
+div.tip_checked {
+  color: #959595;
+  background-color: #d5d5d5;
+}
+
+div.tip_hidden {
+  display: none;
+}
+
+div.tips_group {
+  border: 2px solid #dddddd;
+  
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px; 
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+div.inactive_tips_tab, div.active_tips_tab {
+  font-size : 22px;
+  float: left;
+  padding: 4px 8px 1px 8px;
+  margin: 0 10px 0 0;
+  position: relative;
+  
+  -moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px; 
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px; 
+}
+
+div.inactive_tips_tab {
+  background-color: #eeeeee;
+  border: 2px solid #dddddd;
+  top: 2px;
+  height: 20px;
+}
+
+div.inactive_tips_tab a {
+  color : #999999;
+}
+
+div.active_tips_tab {
+  color : #2398c9;
+  background-color: white;
+  border-top: 2px solid #dddddd;
+  border-right: 2px solid #dddddd;
+  border-left: 2px solid #dddddd;
+  top: 2px;
+  height: 22px;
+}
+
+div.rounded, div.alerts_notice, div.stat_bubble, div.tip_block,
+div.tip_done_unchecked, div.tip_todo_unchecked, div.tip_checked,
+div.venue_special {
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px; 
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px; 
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+.text_bigger {
+  font-size : 16px;
+  line-height: 16pt;
+}
+
+.login_title {
+  font-size : 20px;
+  color : #000000;
+  line-height: 20pt;
+}
+
+.login_box {
+  font-size : 25px;
+  color : #000000;
+  line-height: 25pt;
+}
+
+.reminder {
+  font-size : 22px;
+  color : #ff6666;
+  font-weight : bold;
+  line-height: 20pt;
+}
+
+.text {
+  font-size : 13px;
+  line-height: 13pt;
+}
+
+.text_bold {
+  font-size : 13px;
+  color : #5a5858;
+  line-height: 13pt;
+  font-weight : bold;
+}
+
+.text_mini {
+  font-size : 10px;
+  color : #5a5858;
+  line-height: 10pt;
+}
+
+.text_top12rank {
+  font-size : 30px;
+  color : #999999;
+  line-height: 20pt;
+  font-weight : bold;
+}
+
+.text_header_light {
+  font-size : 24px;
+  color : #0066cc;
+  line-height: 20pt;
+}
+
+.text_header_light_gray {
+  font-size : 24px;
+  color : #888888;
+  line-height: 24pt;
+}
+
+.text_header_mini {
+  font-size : 18px;
+  color : #0066cc;
+  font-weight : bold;
+  line-height: 20pt;
+}
+
+.text_white {
+  font-size : 13px;
+  color : #FFFFFF;
+  line-height: 13pt;
+}
+
+.text_statusmsg {
+  font-size : 15px;
+  color : #FFFFFF;
+  line-height: 13pt;
+}
+
+.text_header_sidenav {
+  font-size : 14px;
+  color : #AAAAAA;
+  font-weight : bold;
+}
+
+.stats_header {
+  font-size : 10px;
+  color : #999999;
+}
+
+.stats_header_white {
+  font-size : 10px;
+  color : #FFFFFF;
+}
+
+.stats_headerXXXXX {
+	font-size : 10px;
+	color : #999999;
+	font-weight : bold;
+	text-decoration: underline;
+}
+
+.stats_number_big {
+	font-size : 60px;
+	color : #999999;
+	font-weight : bold;
+	line-height: 40pt;
+}
+
+.stats_number_big_white {
+	font-size : 60px;
+	color : #FFFFFF;
+	font-weight : bold;
+	line-height: 40pt;
+}
+
+.input {
+  color: #666666;
+  font-size: 16px;
+}
+
+.input_smaller {
+  color: #666666;
+  font-size: 14px;
+}
+
+.input_button {
+  background-color: #0066cc;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.input_example {
+  color: #999999;
+  font-size: 13px;
+}
+
+div.autocomplete {
+  position:absolute;
+  width:250px;
+  background-color:white;
+  border:1px solid #888;
+  margin:0px;
+  padding:0px;
+}
+
+div.autocomplete ul {
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+
+div.autocomplete ul li.selected {
+  background-color: #ffb;
+}
+
+div.autocomplete ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  height:32px;
+  cursor:pointer;
+}
+
+.informal {
+  display: block;
+  color: #aaa;
+  font-size: 70%;
+}
